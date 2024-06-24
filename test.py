@@ -7,10 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainpage():
-	return "Hello from my python server"
-@app.route('/hey')
-def mainpage():
-    return "Hii I am Tushar"
+	return "Hello I am Tushar "
+
 
 if(__name__=='__main__'):
-	app.run(host='localhost',debug=True)
+	app.run(host='0.0.0.0',port= 5000,debug=True)
