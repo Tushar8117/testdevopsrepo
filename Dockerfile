@@ -1,4 +1,4 @@
-FROM python3:latest
+FROM python
 
 WORKDIR ./
 
@@ -6,6 +6,6 @@ COPY . .
 
 RUN "pip install Flask"
 
-CMD ["python","hello.py"]
+CMD ["python3","hello.py"]
 
 EXPOSE 5000
