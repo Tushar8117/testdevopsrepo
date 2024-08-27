@@ -12,7 +12,7 @@ pipeline {
                 sh 'ls'
                 sh 'docker --version'
                 sh 'docker build -t myimage .'
-                sh 'docker run --name mycontainer1 -d -p 5000:5000 myimage'
+                sh 'docker run --name mycontainer -d -p 5000:5000 myimage'
                 
             }
 
